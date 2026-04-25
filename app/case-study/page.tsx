@@ -39,13 +39,13 @@ const timeline = [
 export default function CaseStudyPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-16">
-      <p className="text-green-700 uppercase tracking-widest text-sm font-semibold mb-3">
+      <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 03
       </p>
-      <h1 className="text-4xl font-bold text-green-900 mb-4">
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">
         Case Study: Flint Water Crisis
       </h1>
-      <p className="text-stone-500 text-lg leading-relaxed mb-12">
+      <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
         The Flint water crisis is one of the most well-documented examples of
         environmental racism in recent U.S. history. It shows how government
         decisions about infrastructure, cost-cutting, and accountability
@@ -54,10 +54,10 @@ export default function CaseStudyPage() {
 
       {/* Background */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 mb-4">
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-4">
           Background
         </h2>
-        <p className="text-stone-600 leading-relaxed mb-4">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           Flint, Michigan is a majority-Black city with a poverty rate nearly
           three times the national average. When the state appointed an
           emergency manager to reduce costs, the decision was made to switch
@@ -66,7 +66,7 @@ export default function CaseStudyPage() {
           supply, poisoning residents for over a year before officials
           acknowledged the problem.
         </p>
-        <p className="text-stone-600 leading-relaxed">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           {/* TODO: Add additional context */}
           [Add your own analysis or additional background here.]
         </p>
@@ -74,15 +74,15 @@ export default function CaseStudyPage() {
 
       {/* Timeline */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 mb-6">
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-6">
           Timeline of Major Events
         </h2>
-        <ol className="relative border-l-2 border-green-300 space-y-8 pl-6">
+        <ol className="relative border-l-2 border-green-300 dark:border-green-700 space-y-8 pl-6">
           {timeline.map(({ year, event }) => (
             <li key={year} className="relative">
-              <span className="absolute -left-[1.65rem] top-1 w-4 h-4 rounded-full bg-green-600 border-2 border-white" />
-              <p className="text-green-800 font-semibold text-sm mb-1">{year}</p>
-              <p className="text-stone-600 leading-relaxed">{event}</p>
+              <span className="absolute -left-[1.65rem] top-1 w-4 h-4 rounded-full bg-green-600 border-2 border-white dark:border-stone-950" />
+              <p className="text-green-800 dark:text-green-400 font-semibold text-sm mb-1">{year}</p>
+              <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{event}</p>
             </li>
           ))}
         </ol>
@@ -90,17 +90,17 @@ export default function CaseStudyPage() {
 
       {/* Why It's an EJ Issue */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 mb-4">
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-4">
           Why Flint Is an Environmental Justice Issue
         </h2>
-        <p className="text-stone-600 leading-relaxed mb-4">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           The Flint crisis is not simply a story of government incompetence. The
           Michigan Civil Rights Commission (2017) concluded that the crisis was
           the result of systemic racism — that a majority-Black, low-income city
           received a level of disregard that would not have been tolerated in a
           wealthier, whiter community.
         </p>
-        <ul className="list-disc list-inside space-y-2 text-stone-600 leading-relaxed">
+        <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-300 leading-relaxed">
           <li>
             The decision to switch water sources was driven entirely by
             cost-cutting under emergency management — a system that stripped
@@ -115,7 +115,7 @@ export default function CaseStudyPage() {
             irreversible cognitive and developmental damage.
           </li>
         </ul>
-        <p className="text-stone-600 leading-relaxed mt-4">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mt-4">
           {/* TODO: Cite Campbell et al. (2016) and MCRC (2017) here */}
           [Expand with citations to Campbell et al. (2016) and the Michigan
           Civil Rights Commission (2017) here.]
@@ -123,11 +123,11 @@ export default function CaseStudyPage() {
       </section>
 
       {/* Broader Patterns */}
-      <section className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
-        <h2 className="text-xl font-semibold text-amber-900 mb-3">
+      <section className="bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-2xl p-6">
+        <h2 className="text-xl font-semibold text-amber-900 dark:text-amber-300 mb-3">
           Broader Patterns of Inequality
         </h2>
-        <p className="text-stone-600 leading-relaxed">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           Flint is not an outlier. It is a concentrated example of patterns
           documented nationally: Black and low-income communities receive
           inferior infrastructure, slower government response to environmental
@@ -135,7 +135,7 @@ export default function CaseStudyPage() {
           The crisis reflects the same structural dynamics — unequal protection,
           state neglect, and racialized cost-cutting — seen across the country.
         </p>
-        <p className="text-stone-600 leading-relaxed mt-3">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mt-3">
           {/* TODO: Add your own comparative analysis */}
           [Add your own analysis here.]
         </p>

@@ -52,7 +52,7 @@ export default function HomePage() {
           </h1>
           <p className="text-green-100 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
             How environmental burdens disproportionately fall on Black
-            communities — and what justice-centered solutions look like.
+            communities, and what justice-centered solutions look like.
           </p>
           <Link
             href="/what-is-environmental-racism"
@@ -65,14 +65,14 @@ export default function HomePage() {
 
       {/* Intro blurb */}
       <section className="max-w-3xl mx-auto px-4 py-14 text-center">
-        <h2 className="text-2xl font-semibold text-green-900 mb-4">
+        <h2 className="text-2xl font-semibold text-green-900 dark:text-green-300 mb-4">
           About This Project
         </h2>
-        <p className="text-stone-600 text-lg leading-relaxed">
+        <p className="text-stone-600 dark:text-stone-300 text-lg leading-relaxed">
           This website was built by Ynalois Pangilinan and Shohruz Ernazarov for
           AFPRL 10100. Our goal is to teach someone with no prior knowledge what
           environmental racism is, how it operates, and what a just future could
-          look like — combining clear writing, data visualizations, and a real
+          look like - combining clear writing, data visualizations, and a real
           case study.
         </p>
       </section>
@@ -84,15 +84,15 @@ export default function HomePage() {
             <Link
               key={href}
               href={href}
-              className="group bg-white rounded-2xl border border-stone-200 p-6 shadow-sm hover:shadow-md hover:border-green-400 transition-all"
+              className="group bg-white dark:bg-stone-800 rounded-2xl border border-stone-200 dark:border-stone-700 p-6 shadow-sm hover:shadow-md hover:border-green-400 dark:hover:border-green-500 transition-all"
             >
               <span className="text-3xl font-bold text-green-200 group-hover:text-green-400 transition-colors">
                 {number}
               </span>
-              <h3 className="mt-2 text-lg font-semibold text-stone-900 group-hover:text-green-900 transition-colors">
+              <h3 className="mt-2 text-lg font-semibold text-stone-900 dark:text-stone-100 group-hover:text-green-900 dark:group-hover:text-green-300 transition-colors">
                 {title}
               </h3>
-              <p className="mt-2 text-sm text-stone-500 leading-relaxed">
+              <p className="mt-2 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
                 {description}
               </p>
             </Link>

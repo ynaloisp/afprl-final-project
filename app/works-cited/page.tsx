@@ -46,11 +46,11 @@ const sources = [
 export default function WorksCitedPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-16">
-      <p className="text-green-700 uppercase tracking-widest text-sm font-semibold mb-3">
+      <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 05
       </p>
-      <h1 className="text-4xl font-bold text-green-900 mb-4">Works Cited</h1>
-      <p className="text-stone-500 text-lg leading-relaxed mb-12">
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">Works Cited</h1>
+      <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
         All sources used across this website. Citations follow Chicago/MLA
         format where applicable.
       </p>
@@ -59,22 +59,22 @@ export default function WorksCitedPage() {
         {sources.map(({ id, citation, note }) => (
           <li
             key={id}
-            className="bg-white border border-stone-200 rounded-xl p-5 shadow-sm"
+            className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl p-5 shadow-sm"
           >
             <div className="flex gap-4">
-              <span className="text-green-300 font-bold text-2xl leading-none mt-0.5 select-none">
+              <span className="text-green-300 dark:text-green-600 font-bold text-2xl leading-none mt-0.5 select-none">
                 {id}.
               </span>
               <div>
-                <p className="text-stone-700 leading-relaxed">{citation}</p>
-                <p className="mt-2 text-sm text-stone-400 italic">{note}</p>
+                <p className="text-stone-700 dark:text-stone-200 leading-relaxed">{citation}</p>
+                <p className="mt-2 text-sm text-stone-400 dark:text-stone-500 italic">{note}</p>
               </div>
             </div>
           </li>
         ))}
       </ol>
 
-      <p className="mt-12 text-stone-400 text-sm">
+      <p className="mt-12 text-stone-400 dark:text-stone-500 text-sm">
         {/* TODO: Add any additional sources you use as you build out the site */}
         Additional sources should be added here as content is developed.
       </p>
