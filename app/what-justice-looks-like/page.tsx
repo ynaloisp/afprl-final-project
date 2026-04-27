@@ -24,13 +24,13 @@ const approaches = [
 export default function WhatJusticeLooksLikePage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-16">
-      <p className="text-green-700 uppercase tracking-widest text-sm font-semibold mb-3">
+      <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 04
       </p>
-      <h1 className="text-4xl font-bold text-green-900 mb-4">
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">
         What Justice Looks Like
       </h1>
-      <p className="text-stone-500 text-lg leading-relaxed mb-12">
+      <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
         Understanding the problem is only the first step. This section explores
         what environmental justice actually requires — in policy, infrastructure,
         enforcement, and, drawing on Derecka Purnell, in our very definition of
@@ -39,19 +39,19 @@ export default function WhatJusticeLooksLikePage() {
 
       {/* EJ Approaches */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 mb-6">
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-6">
           Environmental Justice Approaches
         </h2>
         <div className="space-y-5">
           {approaches.map(({ title, description }) => (
             <div
               key={title}
-              className="bg-white border border-stone-200 rounded-xl p-5 shadow-sm"
+              className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl p-5 shadow-sm"
             >
-              <h3 className="font-semibold text-green-800 text-lg mb-2">
+              <h3 className="font-semibold text-green-800 dark:text-green-400 text-lg mb-2">
                 {title}
               </h3>
-              <p className="text-stone-600 leading-relaxed">{description}</p>
+              <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
@@ -59,33 +59,33 @@ export default function WhatJusticeLooksLikePage() {
 
       {/* Purnell / Abolition connection */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 mb-4">
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-4">
           Redefining Safety: Purnell and the Abolitionist Vision
         </h2>
-        <blockquote className="border-l-4 border-green-500 pl-5 text-stone-600 italic mb-6">
+        <blockquote className="border-l-4 border-green-500 pl-5 text-stone-600 dark:text-stone-300 italic mb-6">
           &ldquo;Safety looks like clean water, healthy housing, and environmental
           protection. It is not only the absence of violence — it is the
           presence of the conditions for life.&rdquo;
-          <span className="block mt-2 text-sm not-italic text-stone-400">
+          <span className="block mt-2 text-sm not-italic text-stone-400 dark:text-stone-500">
             — paraphrasing Derecka Purnell,{" "}
             <em>Becoming Abolitionists</em> (2021)
           </span>
         </blockquote>
-        <p className="text-stone-600 leading-relaxed mb-4">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           In <em>Becoming Abolitionists</em>, Derecka Purnell challenges the
           narrow, police-centered definition of safety that dominates American
           political life. True safety, she argues, requires the material
           conditions that allow people to thrive: clean air, clean water, safe
           housing, and healthy neighborhoods.
         </p>
-        <p className="text-stone-600 leading-relaxed mb-4">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           This framing makes environmental justice inseparable from abolitionist
           politics. When the state poisons the water of a Black city and then
           responds slowly and dismissively — as in Flint — it is enacting the
           opposite of safety. Policing cannot solve lead in the water. Only
           investment, accountability, and redistributive policy can.
         </p>
-        <p className="text-stone-600 leading-relaxed">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           {/* TODO: Expand with your own close reading of Purnell */}
           [Add your own analysis drawing on specific passages from{" "}
           <em>Becoming Abolitionists</em> here.]
@@ -93,16 +93,16 @@ export default function WhatJusticeLooksLikePage() {
       </section>
 
       {/* Prevention over punishment */}
-      <section className="bg-green-50 border border-green-200 rounded-2xl p-6">
-        <h2 className="text-xl font-semibold text-green-900 mb-3">
+      <section className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-2xl p-6">
+        <h2 className="text-xl font-semibold text-green-900 dark:text-green-300 mb-3">
           Prevention and Investment, Not Punishment
         </h2>
-        <p className="text-stone-600 leading-relaxed mb-3">
+        <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-3">
           Environmental justice is not primarily about punishing polluters after
           the damage is done. It is about building systems that prevent harm
           from occurring in the first place. This means:
         </p>
-        <ul className="list-disc list-inside space-y-2 text-stone-600 leading-relaxed">
+        <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-300 leading-relaxed">
           <li>
             Proactive infrastructure investment in historically neglected
             communities.

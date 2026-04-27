@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,24 +22,27 @@ export default function Navbar() {
         <Link href="/" className="text-xl font-bold leading-tight hover:text-green-200 transition-colors">
           Environmental Justice
         </Link>
-        <nav>
-          <ul className="flex flex-wrap gap-1 text-sm">
-            {navLinks.map(({ href, label }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className={`px-3 py-1.5 rounded transition-colors ${
-                    pathname === href
-                      ? "bg-green-700 text-white font-semibold"
-                      : "hover:bg-green-800 text-green-100"
-                  }`}
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="flex items-center gap-2">
+          <nav>
+            <ul className="flex flex-wrap gap-1 text-sm">
+              {navLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={`px-3 py-1.5 rounded transition-colors ${
+                      pathname === href
+                        ? "bg-green-700 text-white font-semibold"
+                        : "hover:bg-green-800 text-green-100"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
