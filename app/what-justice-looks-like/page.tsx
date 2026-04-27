@@ -27,13 +27,10 @@ export default function WhatJusticeLooksLikePage() {
       <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 04
       </p>
-      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">
-        What Justice Looks Like
-      </h1>
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">What Justice Looks Like</h1>
       <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
-        Understanding the problem is only the first step. This section explores
-        what environmental justice actually requires — in policy, infrastructure,
-        enforcement, and, drawing on Derecka Purnell, in our very definition of
+        Understanding the problem is only the first step. This section explores what environmental justice actually
+        requires — in policy, infrastructure, enforcement, and, drawing on Derecka Purnell, in our very definition of
         safety.
       </p>
 
@@ -48,10 +45,32 @@ export default function WhatJusticeLooksLikePage() {
               key={title}
               className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl p-5 shadow-sm"
             >
-              <h3 className="font-semibold text-green-800 dark:text-green-400 text-lg mb-2">
-                {title}
-              </h3>
+              <h3 className="font-semibold text-green-800 dark:text-green-400 text-lg mb-2">{title}</h3>
               <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{description}</p>
+              {title === "Policy Reform" && (
+                <p className="text-stone-500 dark:text-stone-400 text-sm mt-2">
+                  <a
+                    href="https://www.epa.gov/sites/default/files/2015-02/documents/nejac-cum-risk-rpt-122104.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-300 hover:decoration-stone-500"
+                  >
+                    (National Environmental Justice Advisory Council)
+                  </a>
+                </p>
+              )}
+              {title === "Enforcement" && (
+                <p className="text-stone-500 dark:text-stone-400 text-sm mt-2">
+                  <a
+                    href="https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/02/CEQ-CEJST-QandA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-300 hover:decoration-stone-500"
+                  >
+                    (Council on Environmental Quality)
+                  </a>
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -63,32 +82,26 @@ export default function WhatJusticeLooksLikePage() {
           Redefining Safety: Purnell and the Abolitionist Vision
         </h2>
         <blockquote className="border-l-4 border-green-500 pl-5 text-stone-600 dark:text-stone-300 italic mb-6">
-          &ldquo;Safety looks like clean water, healthy housing, and environmental
-          protection. It is not only the absence of violence — it is the
-          presence of the conditions for life.&rdquo;
+          &ldquo;Safety looks like clean water, healthy housing, and environmental protection. It is not only the
+          absence of violence — it is the presence of the conditions for life.&rdquo;
           <span className="block mt-2 text-sm not-italic text-stone-400 dark:text-stone-500">
-            — paraphrasing Derecka Purnell,{" "}
-            <em>Becoming Abolitionists</em> (2021)
+            — paraphrasing Derecka Purnell, <em>Becoming Abolitionists</em> (2021).
           </span>
         </blockquote>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
-          In <em>Becoming Abolitionists</em>, Derecka Purnell challenges the
-          narrow, police-centered definition of safety that dominates American
-          political life. True safety, she argues, requires the material
-          conditions that allow people to thrive: clean air, clean water, safe
-          housing, and healthy neighborhoods.
+          In <em>Becoming Abolitionists</em>, Derecka Purnell challenges the narrow, police-centered definition of
+          safety that dominates American political life. True safety, she argues, requires the material conditions that
+          allow people to thrive: clean air, clean water, safe housing, and healthy neighborhoods (Purnell).
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
-          This framing makes environmental justice inseparable from abolitionist
-          politics. When the state poisons the water of a Black city and then
-          responds slowly and dismissively — as in Flint — it is enacting the
-          opposite of safety. Policing cannot solve lead in the water. Only
-          investment, accountability, and redistributive policy can.
+          This framing makes environmental justice inseparable from abolitionist politics. When the state poisons the
+          water of a Black city and then responds slowly and dismissively — as in Flint — it is enacting the opposite of
+          safety. Policing cannot solve lead in the water. Only investment, accountability, and redistributive policy
+          can (Purnell).
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           {/* TODO: Expand with your own close reading of Purnell */}
-          [Add your own analysis drawing on specific passages from{" "}
-          <em>Becoming Abolitionists</em> here.]
+          [Add your own analysis drawing on specific passages from <em>Becoming Abolitionists</em> here.]
         </p>
       </section>
 
@@ -98,27 +111,14 @@ export default function WhatJusticeLooksLikePage() {
           Prevention and Investment, Not Punishment
         </h2>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-3">
-          Environmental justice is not primarily about punishing polluters after
-          the damage is done. It is about building systems that prevent harm
-          from occurring in the first place. This means:
+          Environmental justice is not primarily about punishing polluters after the damage is done. It is about
+          building systems that prevent harm from occurring in the first place. This means:
         </p>
         <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-300 leading-relaxed">
-          <li>
-            Proactive infrastructure investment in historically neglected
-            communities.
-          </li>
-          <li>
-            Early warning systems and health monitoring in overburdened
-            neighborhoods.
-          </li>
-          <li>
-            Community ownership and governance over local environmental
-            decisions.
-          </li>
-          <li>
-            Reparative policies that acknowledge the compounding harm of decades
-            of environmental neglect.
-          </li>
+          <li>Proactive infrastructure investment in historically neglected communities.</li>
+          <li>Early warning systems and health monitoring in overburdened neighborhoods.</li>
+          <li>Community ownership and governance over local environmental decisions.</li>
+          <li>Reparative policies that acknowledge the compounding harm of decades of environmental neglect.</li>
         </ul>
       </section>
     </article>
