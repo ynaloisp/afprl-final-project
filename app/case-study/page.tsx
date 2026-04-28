@@ -64,7 +64,15 @@ export default function CaseStudyPage() {
           the city's water supply — without implementing federally required
           corrosion controls. Lead from aging pipes leached into the water
           supply, poisoning residents for over a year before officials
-          acknowledged the problem.
+          acknowledged the problem.{" "}
+          <a
+            href="https://doi.org/10.3390/ijerph13100951"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Campbell et al.)
+          </a>
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           {/* TODO: Add additional context */}
@@ -80,9 +88,27 @@ export default function CaseStudyPage() {
         <ol className="relative border-l-2 border-green-300 dark:border-green-700 space-y-8 pl-6">
           {timeline.map(({ year, event }) => (
             <li key={year} className="relative">
-              <span className="absolute -left-[1.65rem] top-1 w-4 h-4 rounded-full bg-green-600 border-2 border-white dark:border-stone-950" />
-              <p className="text-green-800 dark:text-green-400 font-semibold text-sm mb-1">{year}</p>
-              <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{event}</p>
+              <span className="absolute -left-[1.65rem] top-1 w-4 h-4 rounded-full bg-green-600 border-2 border-white" />
+              <p className="text-green-800 font-semibold text-sm mb-1">{year}</p>
+              <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
+                {year === "2016" ? (
+                  <>
+                    The{" "}
+                    <a
+                      href="https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf?rev=4601519b3af345cfb9d468ae6ece9141"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-stone-300 hover:decoration-stone-500"
+                    >
+                      Michigan Civil Rights Commission
+                    </a>{" "}
+                    begins an investigation and later concludes that the crisis
+                    was a product of &ldquo;systemic racism.&rdquo;
+                  </>
+                ) : (
+                  event
+                )}
+              </p>
             </li>
           ))}
         </ol>
@@ -98,7 +124,15 @@ export default function CaseStudyPage() {
           Michigan Civil Rights Commission (2017) concluded that the crisis was
           the result of systemic racism — that a majority-Black, low-income city
           received a level of disregard that would not have been tolerated in a
-          wealthier, whiter community.
+          wealthier, whiter community.{" "}
+          <a
+            href="https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf?rev=4601519b3af345cfb9d468ae6ece9141"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Michigan Civil Rights Commission)
+          </a>
         </p>
         <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-300 leading-relaxed">
           <li>
@@ -116,9 +150,25 @@ export default function CaseStudyPage() {
           </li>
         </ul>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mt-4">
-          {/* TODO: Cite Campbell et al. (2016) and MCRC (2017) here */}
-          [Expand with citations to Campbell et al. (2016) and the Michigan
-          Civil Rights Commission (2017) here.]
+          This pattern is supported by both peer-reviewed public health
+          analysis and state civil-rights findings that document preventable
+          harm, delayed response, and racialized policy impact in Flint.{" "}
+          <a
+            href="https://doi.org/10.3390/ijerph13100951"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Campbell et al.)
+          </a>{" "}
+          <a
+            href="https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf?rev=4601519b3af345cfb9d468ae6ece9141"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Michigan Civil Rights Commission)
+          </a>
         </p>
       </section>
 
@@ -133,7 +183,23 @@ export default function CaseStudyPage() {
           inferior infrastructure, slower government response to environmental
           hazards, and less legal accountability when those hazards cause harm.
           The crisis reflects the same structural dynamics — unequal protection,
-          state neglect, and racialized cost-cutting — seen across the country.
+          state neglect, and racialized cost-cutting — seen across the country.{" "}
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2020/12/ToxicWastesRace.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (United Church of Christ Commission for Racial Justice)
+          </a>{" "}
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2021/03/toxic-wastes-and-race-at-twenty-1987-2007.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Bullard et al.)
+          </a>
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mt-3">
           {/* TODO: Add your own comparative analysis */}

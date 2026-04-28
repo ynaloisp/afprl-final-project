@@ -4,13 +4,10 @@ export default function WhatIsEnvironmentalRacismPage() {
       <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 01
       </p>
-      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-6">
-        What Is Environmental Racism?
-      </h1>
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-6">What Is Environmental Racism?</h1>
       <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
-        Before we can understand the data, we need to understand the terms. This
-        section introduces the core concepts that frame everything else on this
-        site.
+        Before we can understand the data, we need to understand the terms. This section introduces the core concepts
+        that frame everything else on this site.
       </p>
 
       {/* Definition block */}
@@ -19,24 +16,27 @@ export default function WhatIsEnvironmentalRacismPage() {
           Defining Environmental Racism
         </h2>
         <blockquote className="border-l-4 border-amber-500 pl-5 text-stone-600 dark:text-stone-300 italic mb-6">
-          &ldquo;Environmental racism refers to any policy, practice, or
-          directive that differentially affects or disadvantages individuals,
-          groups, or communities based on race or color in relation to the
-          development, implementation, and enforcement of environmental laws,
-          regulations, and policies.&rdquo;
+          &ldquo;Environmental racism refers to any policy, practice, or directive that differentially affects or
+          disadvantages individuals, groups, or communities based on race or color in relation to the development,
+          implementation, and enforcement of environmental laws, regulations, and policies.&rdquo;
           <span className="block mt-2 text-sm not-italic text-stone-400 dark:text-stone-500">
-            — Dr. Robert Bullard, often called the &ldquo;Father of
-            Environmental Justice&rdquo;
+            — Dr. Robert Bullard, often called the &ldquo;Father of Justice&rdquo; (Bullard et al.).
+            <a
+              href="https://www.ucc.org/wp-content/uploads/2021/03/toxic-wastes-and-race-at-twenty-1987-2007.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 underline decoration-stone-300 hover:decoration-stone-500"
+            >
+              Source
+            </a>
           </span>
         </blockquote>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           {/* TODO: Expand with your own beginner-friendly explanation */}
-          Environmental racism is when communities of color (particularly Black
-          communities) are more likely to live near polluting facilities, have
-          less access to clean water and green space, and receive weaker
-          environmental protection from the government. This is not accidental.
-          It is the result of decades of deliberate policy choices rooted in
-          racial segregation and structural inequality.
+          Environmental racism is when communities of color (particularly Black communities) are more likely to live
+          near polluting facilities, have less access to clean water and green space, and receive weaker environmental
+          protection from the government. This is not accidental. It is the result of decades of deliberate policy
+          choices rooted in racial segregation and structural inequality.
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
           {/* TODO: Add more detail here */}
@@ -46,9 +46,7 @@ export default function WhatIsEnvironmentalRacismPage() {
 
       {/* Key Concepts */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-6">
-          Key Concepts
-        </h2>
+        <h2 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-6">Key Concepts</h2>
         <div className="space-y-6">
           {[
             {
@@ -71,10 +69,44 @@ export default function WhatIsEnvironmentalRacismPage() {
               key={term}
               className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl p-5 shadow-sm"
             >
-              <h3 className="font-semibold text-green-800 dark:text-green-400 text-lg mb-2">
-                {term}
-              </h3>
+              <h3 className="font-semibold text-green-800 dark:text-green-400 text-lg mb-2">{term}</h3>
               <p className="text-stone-600 dark:text-stone-300 leading-relaxed">{definition}</p>
+              {term === "Disproportionate Exposure" && (
+                <p className="text-stone-500 dark:text-stone-400 text-sm mt-2">
+                  <a
+                    href="https://www.ucc.org/wp-content/uploads/2020/12/ToxicWastesRace.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-300 hover:decoration-stone-500"
+                  >
+                    (United Church of Christ Commission for Racial Justice)
+                  </a>
+                </p>
+              )}
+              {term === "Cumulative Impacts" && (
+                <p className="text-stone-500 dark:text-stone-400 text-sm mt-2">
+                  <a
+                    href="https://www.epa.gov/sites/default/files/2015-02/documents/nejac-cum-risk-rpt-122104.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-300 hover:decoration-stone-500"
+                  >
+                    (National Environmental Justice Advisory Council)
+                  </a>
+                </p>
+              )}
+              {term === "Unequal Protection" && (
+                <p className="text-stone-500 dark:text-stone-400 text-sm mt-2">
+                  <a
+                    href="https://www.ucc.org/wp-content/uploads/2021/03/toxic-wastes-and-race-at-twenty-1987-2007.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-stone-300 hover:decoration-stone-500"
+                  >
+                    (Bullard et al.)
+                  </a>
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -86,24 +118,20 @@ export default function WhatIsEnvironmentalRacismPage() {
           Connection to Africana Studies
         </h2>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
-          Environmental racism does not exist in a vacuum. It is deeply
-          connected to broader Africana Studies themes:
+          Environmental racism does not exist in a vacuum. It is deeply connected to broader Africana Studies themes:
         </p>
         <ul className="list-disc list-inside space-y-2 text-stone-600 dark:text-stone-300 leading-relaxed">
           <li>
-            <strong>Racial Segregation:</strong> Redlining and exclusionary
-            zoning forced Black communities into areas near industrial zones and
-            away from green space and clean resources.
+            <strong>Racial Segregation:</strong> Redlining and exclusionary zoning forced Black communities into areas
+            near industrial zones and away from green space and clean resources.
           </li>
           <li>
-            <strong>Structural Inequality:</strong> Disparities in wealth,
-            political power, and legal representation mean communities of color
-            have fewer tools to fight back against environmental harm.
+            <strong>Structural Inequality:</strong> Disparities in wealth, political power, and legal representation
+            mean communities of color have fewer tools to fight back against environmental harm.
           </li>
           <li>
-            <strong>State Power:</strong> Governments at local, state, and
-            federal levels have historically failed — or actively refused — to
-            protect Black communities from environmental harm.
+            <strong>State Power:</strong> Governments at local, state, and federal levels have historically failed — or
+            actively refused — to protect Black communities from environmental harm.
           </li>
         </ul>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mt-4">
@@ -114,17 +142,29 @@ export default function WhatIsEnvironmentalRacismPage() {
 
       {/* Historical Landmark */}
       <section className="bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-2xl p-6">
-        <h2 className="text-xl font-semibold text-green-900 dark:text-green-300 mb-3">
-          A Landmark Study
-        </h2>
+        <h2 className="text-xl font-semibold text-green-900 dark:text-green-300 mb-3">A Landmark Study</h2>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
-          In 1987, the United Church of Christ Commission for Racial Justice
-          published <em>Toxic Wastes and Race in the United States</em>, the
-          first national study to systematically document the relationship
-          between race and the location of hazardous waste facilities. It found
-          that race was the most significant factor in determining where such
-          facilities were sited. A follow-up study in 2007 confirmed these
-          disparities had not improved.
+          In 1987, the United Church of Christ Commission for Racial Justice published{" "}
+          <em>Toxic Wastes and Race in the United States</em>, the first national study to systematically document the
+          relationship between race and the location of hazardous waste facilities. It found that race was the most
+          significant factor in determining where such facilities were sited. A follow-up study in 2007 confirmed these
+          disparities had not improved.{" "}
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2020/12/ToxicWastesRace.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (United Church of Christ Commission for Racial Justice)
+          </a>{" "}
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2021/03/toxic-wastes-and-race-at-twenty-1987-2007.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            (Bullard et al.)
+          </a>
         </p>
       </section>
     </article>

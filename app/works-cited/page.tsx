@@ -1,44 +1,143 @@
 const sources = [
   {
     id: 1,
-    citation:
-      "United Church of Christ Commission for Racial Justice. (1987). Toxic Wastes and Race in the United States: A National Report on the Racial and Socio-Economic Characteristics of Communities with Hazardous Waste Sites. United Church of Christ.",
+    citation: (
+      <>
+        United Church of Christ Commission for Racial Justice.{" "}
+        <em>
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2020/12/ToxicWastesRace.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            Toxic Wastes and Race in the United States: A National Report on the
+            Racial and Socio-Economic Characteristics of Communities with
+            Hazardous Waste Sites
+          </a>
+        </em>
+        . United Church of Christ Commission for Racial Justice, 1987.
+        Accessed 27 Apr. 2026.
+      </>
+    ),
     note: "Landmark study establishing disproportionate exposure patterns by race.",
   },
   {
     id: 2,
-    citation:
-      "Bullard, R. D., Mohai, P., Saha, R., & Wright, B. (2007). Toxic Wastes and Race at Twenty: 1987–2007. United Church of Christ Justice and Witness Ministries.",
+    citation: (
+      <>
+        Bullard, Robert D., Paul Mohai, Robin Saha, and Beverly Wright.{" "}
+        <em>
+          <a
+            href="https://www.ucc.org/wp-content/uploads/2021/03/toxic-wastes-and-race-at-twenty-1987-2007.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            Toxic Wastes and Race at Twenty: 1987-2007
+          </a>
+        </em>
+        . United Church of Christ Justice and Witness Ministries, 2007.
+        Accessed 27 Apr. 2026.
+      </>
+    ),
     note: "20-year follow-up confirming continued racial disparities in environmental burdens.",
   },
   {
     id: 3,
-    citation:
-      "Michigan Civil Rights Commission. (2017). The Flint Water Crisis: Systemic Racism Through the Lens of Flint. Michigan Department of Civil Rights.",
+    citation: (
+      <>
+        Michigan Civil Rights Commission.{" "}
+        <em>
+          <a
+            href="https://www.michigan.gov/-/media/Project/Websites/mdcr/mcrc/reports/2017/flint-crisis-report-edited.pdf?rev=4601519b3af345cfb9d468ae6ece9141"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            The Flint Water Crisis: Systemic Racism Through the Lens of Flint
+          </a>
+        </em>
+        . Michigan Department of Civil Rights, 17 Feb. 2017. Accessed 27 Apr.
+        2026.
+      </>
+    ),
     note: "Analyzes the Flint water crisis as a product of structural racism.",
   },
   {
     id: 4,
-    citation:
-      "Campbell, C., Greenberg, R., Mankikar, D., & Ross, R. D. (2016). A Case Study of Environmental Injustice: The Failure in Flint. International Journal of Environmental Research and Public Health, 13(10), 951.",
+    citation: (
+      <>
+        Campbell, Carla, Rachael Greenberg, Deepa Mankikar, and Ronald D.
+        Ross. "A Case Study of Environmental Injustice: The Failure in Flint."{" "}
+        <em>International Journal of Environmental Research and Public Health</em>
+        , vol. 13, no. 10, 2016, article 951,{" "}
+        <a
+          href="https://doi.org/10.3390/ijerph13100951"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-stone-300 hover:decoration-stone-500"
+        >
+          https://doi.org/10.3390/ijerph13100951
+        </a>
+        . Accessed 27 Apr. 2026.
+      </>
+    ),
     note: "Open-access peer-reviewed article examining Flint through an environmental justice framework.",
   },
   {
     id: 5,
-    citation:
-      "EPA National Environmental Justice Advisory Council. (2004). Ensuring Risk Reduction in Communities with Multiple Stressors: Environmental Justice and Cumulative Risks/Impacts. U.S. Environmental Protection Agency.",
+    citation: (
+      <>
+        National Environmental Justice Advisory Council.{" "}
+        <em>
+          <a
+            href="https://www.epa.gov/sites/default/files/2015-02/documents/nejac-cum-risk-rpt-122104.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            Ensuring Risk Reduction in Communities with Multiple Stressors:
+            Environmental Justice and Cumulative Risks/Impacts
+          </a>
+        </em>
+        . U.S. Environmental Protection Agency, Dec. 2004. Accessed 27 Apr.
+        2026.
+      </>
+    ),
     note: "Report on cumulative impacts and environmental justice policy recommendations.",
   },
   {
     id: 6,
-    citation:
-      "White House Council on Environmental Quality. (2022). Climate and Economic Justice Screening Tool (CEJST): Technical Support Document. Executive Office of the President.",
+    citation: (
+      <>
+        Council on Environmental Quality.{" "}
+        <em>
+          <a
+            href="https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/02/CEQ-CEJST-QandA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-300 hover:decoration-stone-500"
+          >
+            Climate and Economic Justice Screening Tool: Questions and Answers
+          </a>
+        </em>
+        . Executive Office of the President, Feb. 2022. Accessed 27 Apr. 2026.
+      </>
+    ),
     note: "Technical documentation for the federal Justice40 screening tool.",
   },
   {
     id: 7,
-    citation:
-      "Purnell, D. (2021). Becoming Abolitionists: Police, Protests, and the Pursuit of Freedom. Astra House.",
+    citation: (
+      <>
+        Purnell, Derecka.{" "}
+        <em>
+          Becoming Abolitionists: Police, Protests, and the Pursuit of Freedom
+        </em>
+        . Astra House, 2021.
+      </>
+    ),
     note: "Required course text. Provides the abolitionist framework connecting environmental justice to safety and state power.",
   },
 ];
@@ -51,8 +150,7 @@ export default function WorksCitedPage() {
       </p>
       <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">Works Cited</h1>
       <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
-        All sources used across this website. Citations follow Chicago/MLA
-        format where applicable.
+        All sources used across this website. Citations follow MLA 9 format.
       </p>
 
       <ol className="space-y-8">
