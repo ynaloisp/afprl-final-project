@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-// Leaflet requires a browser environment — dynamic import with ssr:false is required
+// Leaflet requires a browser environment so we use dynamic import with ssr:false
 const LeafletMap = dynamic(() => import("./LeafletMap"), { ssr: false });
 
 export default function MapSection() {

@@ -2,22 +2,22 @@ const approaches = [
   {
     title: "Policy Reform",
     description:
-      "Strengthening environmental laws to explicitly address cumulative impacts and racial disparities. This includes updating NEPA review processes, tightening permitting near residential areas, and codifying environmental justice into federal and state agency mandates.",
+      "Strengthening environmental laws to explicitly address cumulative impacts and racial disparities. This includes updating NEPA review processes, tightening permitting near residential areas, and writing environmental justice into federal and state agency mandates.",
   },
   {
     title: "Infrastructure Investment",
     description:
-      "Directing public investment to repair aging infrastructure in communities that have been historically under-resourced — replacing lead pipes, upgrading water treatment facilities, and expanding access to green space.",
+      "Directing public investment to repair aging infrastructure in communities that have been historically neglected. This means replacing lead pipes, upgrading water treatment facilities, and expanding access to green space.",
   },
   {
     title: "Enforcement",
     description:
-      "Ensuring that environmental violations in communities of color are investigated and penalized at the same rate as violations in wealthier, whiter communities. The EPA's Environmental Justice office and the Justice40 initiative represent steps in this direction.",
+      'Ensuring that environmental violations in communities of color are investigated and penalized at the same rate as violations in wealthier, whiter communities. The Justice40 Initiative directs "40 percent of the overall benefits of certain Federal investments" to "disadvantaged communities that are marginalized, underserved, and overburdened by pollution" (Council on Environmental Quality). The EPA\'s Environmental Justice office and tools like Justice40 represent critical steps in this direction.',
   },
   {
-    title: "Community Decision-Making",
+    title: "Community Decision Making",
     description:
-      "Centering the voices of affected communities in decisions about land use, permitting, and environmental policy. Meaningful participation means more than public comment periods — it means community veto power and co-governance.",
+      "Centering the voices of affected communities in decisions about land use, permitting, and environmental policy. Meaningful participation means more than public comment periods. It means community veto power and co governance.",
   },
 ];
 
@@ -30,8 +30,8 @@ export default function WhatJusticeLooksLikePage() {
       <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">What Justice Looks Like</h1>
       <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
         Understanding the problem is only the first step. This section explores what environmental justice actually
-        requires — in policy, infrastructure, enforcement, and, drawing on Derecka Purnell, in our very definition of
-        safety.
+        requires in terms of policy, infrastructure, enforcement, and, drawing on Derecka Purnell, in our very
+        definition of safety.
       </p>
 
       {/* EJ Approaches */}
@@ -82,10 +82,10 @@ export default function WhatJusticeLooksLikePage() {
           Redefining Safety: Purnell and the Abolitionist Vision
         </h2>
         <blockquote className="border-l-4 border-green-500 pl-5 text-stone-600 dark:text-stone-300 italic mb-6">
-          &ldquo;Safety looks like clean water, healthy housing, and environmental protection. It is not only the
-          absence of violence — it is the presence of the conditions for life.&rdquo;
+          &ldquo;Sometimes safety looks like clean water or preventing chemical explosions or demolishing
+          abandoned buildings or ending exposure to lead paint.&rdquo;
           <span className="block mt-2 text-sm not-italic text-stone-400 dark:text-stone-500">
-            — paraphrasing Derecka Purnell, <em>Becoming Abolitionists</em> (2021).
+            Derecka Purnell, <em>Becoming Abolitionists</em> (Purnell, Introduction).
           </span>
         </blockquote>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
@@ -95,13 +95,23 @@ export default function WhatJusticeLooksLikePage() {
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed mb-4">
           This framing makes environmental justice inseparable from abolitionist politics. When the state poisons the
-          water of a Black city and then responds slowly and dismissively — as in Flint — it is enacting the opposite of
-          safety. Policing cannot solve lead in the water. Only investment, accountability, and redistributive policy
-          can (Purnell).
+          water of a Black city and then responds slowly and dismissively, as it did in Flint, it is enacting the
+          opposite of safety. Policing cannot solve lead in the water. Only investment, accountability, and
+          redistributive policy can (Purnell).
         </p>
         <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
-          {/* TODO: Expand with your own close reading of Purnell */}
-          [Add your own analysis drawing on specific passages from <em>Becoming Abolitionists</em> here.]
+          Purnell&rsquo;s abolitionist framework does not stop at policing. It extends to reimagining what safe,
+          healthy communities look like. In her vision for an abolitionist future, she writes that
+          &ldquo;reducing our current use of cars would drastically cut pollution and save the lives of those
+          suffering from asthma, diseases, and cancer because we live near highways and major roads&rdquo;
+          (Purnell, ch. 8). These are not abstract concerns. Purnell grounds them in her own childhood,
+          recalling that her mother &ldquo;had grown up in substandard housing where the pipes always broke
+          and once the ceiling caved&rdquo; (Purnell, ch. 1). The crumbling pipes of St. Louis and the
+          lead laced water of Flint are symptoms of the same disease: a system of racial capitalism and
+          state neglect where infrastructure investment flows away from Black communities while
+          environmental hazards flow toward them. When we invest in clean infrastructure, green
+          transit, and community health instead of policing, we address the root causes of the
+          unsafe conditions documented throughout this project.
         </p>
       </section>
 

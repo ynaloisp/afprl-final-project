@@ -52,7 +52,7 @@ export default function ChartsSection() {
           scores indicate greater exposure to environmental hazards.{" "}
           <span className="italic">
             {/* TODO: Update citation once real dataset is chosen */}
-            (Placeholder data — replace with real values from OpenData NYC or CEJST.)
+            (Placeholder data, replace with real values from OpenData NYC or CEJST.)
           </span>
         </p>
         <ResponsiveContainer width="100%" height={300}>
@@ -75,7 +75,7 @@ export default function ChartsSection() {
           Comparing the share of Black residents with the share of census tracts
           rated high environmental burden per borough.{" "}
           <span className="italic">
-            (Placeholder data — replace with real values.)
+            (Placeholder data, replace with real values.)
           </span>
         </p>
         <ResponsiveContainer width="100%" height={320}>
@@ -101,7 +101,7 @@ export default function ChartsSection() {
             Share of industrial facilities located within 1 mile of
             communities by racial majority.{" "}
             <span className="italic">
-              (Placeholder data — replace with real values.)
+              (Placeholder data, replace with real values.)
             </span>
           </p>
           <ul className="space-y-1 text-sm text-stone-600">

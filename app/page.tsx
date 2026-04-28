@@ -12,7 +12,7 @@ const sections = [
     href: "/map-and-charts",
     title: "Interactive Map & Charts",
     description:
-      "Explore data visualizations showing environmental burdens — pollution, heat risk, and water issues — alongside demographic data.",
+      "Explore data visualizations showing how environmental burdens like pollution, heat risk, and water issues overlap with demographic data.",
     number: "02",
   },
   {
@@ -26,7 +26,7 @@ const sections = [
     href: "/what-justice-looks-like",
     title: "What Justice Looks Like",
     description:
-      "Explore environmental justice approaches — from policy reform to community decision-making — and Derecka Purnell's abolitionist vision of safety.",
+      "Explore environmental justice approaches, from policy reform to community decision making, and Derecka Purnell's abolitionist vision of safety.",
     number: "04",
   },
   {
@@ -51,8 +51,8 @@ export default function HomePage() {
             Environmental Racism &amp; Justice
           </h1>
           <p className="text-green-100 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
-            How environmental burdens disproportionately fall on Black
-            communities, and what justice-centered solutions look like.
+            How environmental burdens fall disproportionately on Black
+            communities, and what real solutions look like.
           </p>
           <Link
             href="/what-is-environmental-racism"
@@ -70,10 +70,10 @@ export default function HomePage() {
         </h2>
         <p className="text-stone-600 dark:text-stone-300 text-lg leading-relaxed">
           This website was built by Ynalois Pangilinan and Shohruz Ernazarov for
-          AFPRL 10100. Our goal is to teach someone with no prior knowledge what
-          environmental racism is, how it operates, and what a just future could
-          look like - combining clear writing, data visualizations, and a real
-          case study.
+          AFPRL 10100. Our goal is to teach someone with no background knowledge
+          what environmental racism is, how it works, and what a just future
+          could look like. We do this through clear writing, data visualizations,
+          and a real case study.
         </p>
       </section>
 
