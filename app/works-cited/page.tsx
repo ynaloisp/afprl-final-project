@@ -16,11 +16,10 @@ const sources = [
             Hazardous Waste Sites
           </a>
         </em>
-        . United Church of Christ Commission for Racial Justice, 1987.
-        Accessed 27 Apr. 2026.
+        . United Church of Christ Commission for Racial Justice, 1987. Accessed
+        27 Apr. 2026.
       </>
     ),
-    note: "Landmark study establishing disproportionate exposure patterns by race.",
   },
   {
     id: 2,
@@ -37,11 +36,10 @@ const sources = [
             Toxic Wastes and Race at Twenty: 1987-2007
           </a>
         </em>
-        . United Church of Christ Justice and Witness Ministries, 2007.
-        Accessed 27 Apr. 2026.
+        . United Church of Christ Justice and Witness Ministries, 2007. Accessed
+        27 Apr. 2026.
       </>
     ),
-    note: "20-year follow-up confirming continued racial disparities in environmental burdens.",
   },
   {
     id: 3,
@@ -62,15 +60,16 @@ const sources = [
         2026.
       </>
     ),
-    note: "Analyzes the Flint water crisis as a product of structural racism.",
   },
   {
     id: 4,
     citation: (
       <>
-        Campbell, Carla, Rachael Greenberg, Deepa Mankikar, and Ronald D.
-        Ross. "A Case Study of Environmental Injustice: The Failure in Flint."{" "}
-        <em>International Journal of Environmental Research and Public Health</em>
+        Campbell, Carla, Rachael Greenberg, Deepa Mankikar, and Ronald D. Ross.
+        "A Case Study of Environmental Injustice: The Failure in Flint."{" "}
+        <em>
+          International Journal of Environmental Research and Public Health
+        </em>
         , vol. 13, no. 10, 2016, article 951,{" "}
         <a
           href="https://doi.org/10.3390/ijerph13100951"
@@ -83,7 +82,6 @@ const sources = [
         . Accessed 27 Apr. 2026.
       </>
     ),
-    note: "Open-access peer-reviewed article examining Flint through an environmental justice framework.",
   },
   {
     id: 5,
@@ -105,7 +103,6 @@ const sources = [
         2026.
       </>
     ),
-    note: "Report on cumulative impacts and environmental justice policy recommendations.",
   },
   {
     id: 6,
@@ -125,7 +122,6 @@ const sources = [
         . Executive Office of the President, Feb. 2022. Accessed 27 Apr. 2026.
       </>
     ),
-    note: "Technical documentation for the federal Justice40 screening tool.",
   },
   {
     id: 7,
@@ -138,7 +134,6 @@ const sources = [
         . Astra House, 2021.
       </>
     ),
-    note: "Required course text. Provides the abolitionist framework connecting environmental justice to safety and state power.",
   },
 ];
 
@@ -148,13 +143,15 @@ export default function WorksCitedPage() {
       <p className="text-green-700 dark:text-green-400 uppercase tracking-widest text-sm font-semibold mb-3">
         Section 05
       </p>
-      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">Works Cited</h1>
+      <h1 className="text-4xl font-bold text-green-900 dark:text-green-300 mb-4">
+        Works Cited
+      </h1>
       <p className="text-stone-500 dark:text-stone-400 text-lg leading-relaxed mb-12">
         All sources used across this website. Citations follow MLA 9 format.
       </p>
 
       <ol className="space-y-8">
-        {sources.map(({ id, citation, note }) => (
+        {sources.map(({ id, citation }) => (
           <li
             key={id}
             className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl p-5 shadow-sm"
@@ -164,18 +161,14 @@ export default function WorksCitedPage() {
                 {id}.
               </span>
               <div>
-                <p className="text-stone-700 dark:text-stone-200 leading-relaxed">{citation}</p>
-                <p className="mt-2 text-sm text-stone-400 dark:text-stone-500 italic">{note}</p>
+                <p className="text-stone-700 dark:text-stone-200 leading-relaxed">
+                  {citation}
+                </p>
               </div>
             </div>
           </li>
         ))}
       </ol>
-
-      <p className="mt-12 text-stone-400 dark:text-stone-500 text-sm">
-        {/* TODO: Add any additional sources you use as you build out the site */}
-        Additional sources should be added here as content is developed.
-      </p>
     </article>
   );
 }
